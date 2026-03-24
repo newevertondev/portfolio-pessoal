@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-agencia.css">
+  <title>Kogi Agência</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<header>
+  <div class="box-nav">
+    <nav>
+      <a href="../home/index.html" class="nav-links">Voltar</a>
+      <a href="#inicio" class="nav-links">Início</a>
+      <a href="#sobre" class="nav-links">Sobre</a>
+      <a href="#servicos" class="nav-links">Serviços</a>
+      <a href="#contato" class="nav-links">Contato</a>
+    </nav>
+  </div>
+</header>
+<body>
+  <main>
+    <section class="first-section" id="inicio">
+      <div class="titleHome">
+      <h1 class="title-kogi" id="kogi">Kogi</h1>
+      <h1 class="title-agencia"id="agencia">Agência</h1>
+      <p id="subtitleHome"></p>
+      </div>
+      <div class="container-logo">
+        <div class="logo-kogi">
+          <img src="../../logos/kogi-agencia-backRemoved.png" alt="Logo da Kogi Agência" id="logo-kogi">
+        </div>
+      </div>
+    </section>
+    <section class="second-section" id="sobre">
+      <h1 class="aboutTitle">Sobre</h1>
+      <container class="about" id="first">
+        <h2 class="containerAbout">2º<br> Missão da Kogi</h2>
+        <hr id="linha-horizontal">
+        <p id="containerAbout">A Kogi nasceu para entregar design claro, criativo e estratégico, ajudando empresas a terem presença visual forte nas redes sociais</p>
+      </container>
+      <container class="about" id="second">
+        <h2 class="containerAbout">1º<br> Rebrand da Marca</h2>
+        <hr id="linha-horizontal">
+        <p id="containerAbout">Em 2024, a antiga NewDesigner mudou para Kogi Agência, passando por um rebrand completo para modernizar a identidade e alinhar a marca ao novo posicionamento.</p>
+      </container>
+      <container class="about" id="third">
+        <h2 class="containerAbout">3º<br> O Que Fazemos Hoje</h2>
+        <hr id="linha-horizontal">
+        <p id="containerAbout">Atuamos criando identidades visuais, artes para mídias sociais e soluções de design que fortalecem marcas e aproximam empresas do público certo.</p>
+      </container>
+    </section>
+
+    <section class="third-section" id="servicos">
+    <h1 class="servicesTitle">Serviços</h1>
+      <div class="slider" style="
+      --width: 150px;
+      --height: 350px;
+      ">
+        <div class="group">
+          <div class="item"><img src="../../media/slides/arte1.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte2.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte3.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte4.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte5.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte6.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte7.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte8.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte9.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte10.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte11.jpg" alt=""></div>
+        </div>
+        <div aria-hidden class="group">
+          <div class="item"><img src="../../media/slides/arte1.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte2.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte3.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte4.jpg" alt=""></div>
+          <div class="item"><img src="../../media/slides/arte5.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte6.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte7.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte8.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte9.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte10.jpg" alt=""></div>         
+          <div class="item"><img src="../../media/slides/arte11.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+      <section class="four-section" id="contato">
+            <h2 class="contatos-titulo">Faça seu Orçamento!</h2>
+            
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo-form">
+                    <input placeholder="Nome" class="campo-form" id="nome" required>
+                </div>
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem" required></textarea>
+                </div>
+                <button type="submit" class="botao-form">Enviar Whatsapp</button>
+            </form>           
+        </main>
+        
+            <footer id="#redes-sociais">
+                <h2 class="title" id="a_footer">Redes Sociais
+                </h2>
+                    <div class="footer-container-redes">
+                    <div class="linha-vertical"></div>
+                    <div class="footer-left">
+                        <h3> Neweverton Fernandes da Silva</h3>
+                        <div class="footer-img-left">
+                            <a href="https://www.instagram.com/new.ferds" target="_blank"><img src="../../icons/instagram.svg" id="iconsRede" alt="Instagram Neweverton"></a>
+                            <a href="https://www.linkedin.com/in/neweverton-fernandes-93ab88287/" target="_blank"><img src="../../icons/linkedin.svg" id="iconsRede" alt="LinkedIn Neweverton" ></a>
+                            <a href="https://github.com/newfernandes" target="_blank"><img src="../../icons/github.svg" id="iconsRede" alt="GitHub Neweverton"></a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                    <h3> Kogi Agência</h3>
+                     <div class="footer-img-right">
+                      <a href="https://www.instagram.com/agenciakogi" target="_blank"><img src="../../icons/instagram.svg" id="iconsRede" alt="Instagram Agência Kogi"></a>   
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p id="footer">Este site foi construído e desenvolvido pelo Neweverton Fernandes da Silva</p>
+        </footer>
+
+      </section>
+  </main>
+  
+<script src="script-agencia.js"></script>
+</body>
+</html>
