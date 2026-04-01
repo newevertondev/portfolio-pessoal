@@ -526,10 +526,6 @@ a > img:hover{
         display: none;
 }
 
-
-
-    f
-
 .formulario-contato {
     max-width: 500px;
 }
@@ -1356,7 +1352,9 @@ html, body {
         margin-right: auto;
         line-height: 1.3rem;
     }
-
+    .linha-vertical {
+    display: none;
+        }
     }
 }
 
