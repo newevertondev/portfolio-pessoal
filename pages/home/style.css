@@ -70,6 +70,13 @@ header {
     max-width: 100%;
 }
 
+
+nav {
+    display: flex;
+    gap: 25px; /* espaçamento entre os links */
+}
+
+
 .menu-btn {
     display: none;
     font-size: 28px;
@@ -84,8 +91,9 @@ header {
 
 .nav-links {
     text-decoration: none;
-    color: var(--white);
     position: relative;
+    color: var(--white);
+    display: inline-block;
     justify-content: center;
     text-decoration: none;
 }
@@ -105,9 +113,6 @@ header {
 .nav-links:hover:before {
     width: 100%;
 }
-
-
-
 a {
     color: var(--white);
 }
@@ -525,6 +530,10 @@ a > img:hover{
     .img-logo, .box-img-header{
         display: none;
 }
+
+
+
+    f
 
 .formulario-contato {
     max-width: 500px;
@@ -1352,9 +1361,9 @@ html, body {
         margin-right: auto;
         line-height: 1.3rem;
     }
+
     .linha-vertical {
     display: none;
-        }
     }
 }
-
+}
