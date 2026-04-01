@@ -13,5 +13,14 @@
         window.open(url, '_blank')
 
         console.log(url)
-    }
+    }    
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav-menu");
+
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("show");
+    });
+    });
 
