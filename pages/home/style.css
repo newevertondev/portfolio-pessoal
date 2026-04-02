@@ -1150,12 +1150,10 @@ html, body {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    }
-
     
     .img-profile {
         border-radius: 30px;
-        width: 60%;
+        width: 55%;
         max-width: 280px;
         object-fit: cover;
         animation: flutuar 5s ease-in-out infinite;
