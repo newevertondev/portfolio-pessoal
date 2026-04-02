@@ -1153,7 +1153,7 @@ html, body {
     
     .img-profile {
         border-radius: 30px;
-        width: 55%;
+        width: 40%;
         max-width: 280px;
         object-fit: cover;
         animation: flutuar 5s ease-in-out infinite;
