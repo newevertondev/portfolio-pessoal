@@ -1150,10 +1150,12 @@ html, body {
     display: flex;
     justify-content: center;
     padding: 1rem;
+    }
+
     
     .img-profile {
         border-radius: 30px;
-        width: 40%;
+        width: 60%;
         max-width: 280px;
         object-fit: cover;
         animation: flutuar 5s ease-in-out infinite;
@@ -1368,7 +1370,6 @@ html, body {
     display: none;
     }
 }
-
 @media (min-width: 768px) and (max-width:1023px) {
 
     html, body {
@@ -1641,3 +1642,4 @@ html, body {
     display: none;
     }
 }
+
