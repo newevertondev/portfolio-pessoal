@@ -15,3 +15,14 @@
         console.log(url)
     }
 
+    document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav");
+
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        menuBtn.classList.toggle("open");
+    });
+});
+
+
