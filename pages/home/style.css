@@ -1370,6 +1370,8 @@ html, body {
     display: none;
     }
 }
+
+ /* Responsividade para Tablets min-width: 768px*/
 @media (min-width: 768px) and (max-width:1023px) {
 
     html, body {
@@ -1395,8 +1397,7 @@ html, body {
 
     .first-section {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: column;
         align-items: center;
         text-align: center;
         padding: 2rem 1rem;
@@ -1404,7 +1405,8 @@ html, body {
     }
 
     .first-section > div {
-        width: 100%;
+        width: 45%;
+        padding-left:2%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1415,35 +1417,42 @@ html, body {
     .first-section h1 {
         padding-top: 4rem;
         font-size: 2.4rem;
-        text-align: center;
+        text-align: left;
     }
 
     .first-section p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         max-width: 500px;
         line-height: 1.6rem;
-        text-align: center;
+        text-align: left;
     }
 
     .box-img-main {
-        width: 100%;
-        display: flex;
-        justify-content: center; 
+        width: 50%;
+        justify-content: right; 
         padding: 0;
     }
 
+
     .img-profile {
-        width: 52%;
-        max-width: 320px;
-        border-radius: 30px;
+    border-radius: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    animation: flutuar 5s ease-in-out infinite;
     }
+    
     section#my-projects {
         padding: 40px 0;
         height: auto;
     }
 
     .projects {
-        flex-direction: column;
+        width: 100%;
+        margin-left: 12%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 3rem;
     }
@@ -1642,4 +1651,3 @@ html, body {
     display: none;
     }
 }
-
