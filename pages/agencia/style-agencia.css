@@ -759,6 +759,40 @@ p#subtitleHome.show {
         text-align: center;
     }
 
+    .group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    animation: autoRun 110s infinite linear;
+}
+.list {
+    flex: 0 0 5em;
+    background-color:blue;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    animation: autoRun 110s infinite linear;
+    transition: filter 0.5s;
+}
+.slider .group .list {
+    position: absolute;
+    animation: autoRun 110s infinite linear;
+    transition: filter 0.5s;
+}
+
+
+.slider:hover .group{
+    animation-play-state: paused!important;
+}
+.slider:hover .item{
+    filter: grayscale(+1);
+    transition: filter 0.5s ease;
+}
+
+.slider .item:hover{
+    filter: grayscale(0);
+}
+
     
     section#contact {
         padding: 3em 1.5em; 
