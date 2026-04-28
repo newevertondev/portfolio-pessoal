@@ -554,15 +554,7 @@ a > img:hover{
     scale: 2.2;
 }
 
-@media (max-width: 767px)
-{
 
-html, body {
-    overflow-x: hidden;
-    min-height: 100vh;
-
-}
-}
     header {
         width: 100%;
         padding: 15px 20px;
@@ -639,6 +631,18 @@ html, body {
     }
 }
 
+
+
+
+@media (max-width: 767px) {
+
+html, body {
+    overflow-x: hidden;
+    min-height: 100vh;
+
+
+}
+
 .first-section {
     display: flex;
     flex-direction: row;
@@ -660,6 +664,7 @@ html, body {
     padding: 40px 0px 0px 10px;
     width: 50%;
 }
+
 h1 {
     font-family: 'Outfit', sans-serif;
     width: auto;
@@ -693,8 +698,8 @@ h1#agencia{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    height: 180px;
+    width: 109px;
+    height: 210px;
     background-color: var(--yellow);
     box-shadow: 10px 10px 0px #593a5a;
     border-radius: 10% 0% 0% 10%;
@@ -702,6 +707,7 @@ h1#agencia{
 }
 
 img#logo-kogi{
+    padding-left: 20px;
     max-width: 130px;
      filter: brightness(0) invert(1);
 }
@@ -718,24 +724,19 @@ p#subtitleHome.show {
     opacity: 1;
 }
 
-
-@media (max-width: 767px) {
-
     .second-section {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
         width: 100%;
-        margin-right: 2rem;
         height: auto;
         max-height: none;
     }
-
     .aboutTitle {
-        order: 0;
-        text-align: center;
-        margin-bottom: 2rem;
+    color: var(--white2s);
+    text-align: center;
+    margin-right: 2rem;
     }
 
     .about#first {
@@ -753,10 +754,12 @@ p#subtitleHome.show {
     .about {
         width: 100%;
         max-width: 320px;
-        padding: 1.5rem 0rem 0rem 2re;
+        padding: 1.5rem 0.2 0;
+        margin-right: 33px;
         text-align: center;
     }
 
+    
     section#contact {
         padding: 3em 1.5em; 
         overflow-x: hidden;
