@@ -768,7 +768,7 @@ p#subtitleHome.show {
         display: flex;
         gap: 1rem;
         width: max-content;
-        animation-duration: 70s;
+        animation-duration: 30s;
     }
 
     .item {
