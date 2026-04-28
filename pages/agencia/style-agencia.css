@@ -786,6 +786,18 @@ p#subtitleHome.show {
         max-width: none;
         object-fit: contain;
     }
+    
+  .slider:hover .group {
+        animation-play-state: running !important;
+    }
+
+    .slider:hover .item {
+        filter: none !important;
+    }
+
+    .slider .item:hover {
+        filter: none !important;
+    }
 
 
     
