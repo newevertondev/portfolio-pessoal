@@ -53,5 +53,24 @@
         window.open(url, '_blank')
 
         console.log(url)
-    }
+    };
 
+      document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const nav = document.getElementById("nav-menu");
+    const navLinks = nav.querySelectorAll(".nav-links");
+
+    if (!menuBtn || !nav) return;
+
+    menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("show");
+        menuBtn.classList.toggle("open");
+    });
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("show");
+            menuBtn.classList.remove("open");
+        });
+    });
+});
