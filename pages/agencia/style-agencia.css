@@ -407,10 +407,10 @@ hr#linha-horizontal {
 
 @keyframes autoRun {
     from {
-       translate: 0;
+        transform: translateX(0);
     }
     to {
-        translate: -100%;
+        transform: translateX(-50%);
     }
 }
 
