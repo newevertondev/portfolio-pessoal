@@ -67,7 +67,8 @@ header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
+    padding: 0 40px;
 }
 
 
@@ -76,6 +77,13 @@ nav {
     gap: 25px; /* espaçamento entre os links */
 }
 
+h5{
+    position: absolute;
+    left: 40px;
+    margin: 0;
+    color: var(--dark5);
+
+}
 
 .menu-btn {
     display: none;
@@ -128,6 +136,7 @@ a:hover {
 .box-btn-action {
     display: flex;
     gap: 1rem;
+    
 }
 
 :is(button,.link-action) {
@@ -507,14 +516,13 @@ section#contact {
     border-radius: 20px;
 }
 
-a > img {
-    padding-top: 23px;
-    filter:invert();
-    size: 1.8;
-    transition: 0.2s;
+
+.icone-link 
+{padding-top: 23px;
+transition: 0.2s;
 }
-a > img:hover{
-    size: 2.2;
+.icone-link:hover {
+transform: scale(0.9);
 }
 
 @keyframes flutuar {
@@ -530,10 +538,6 @@ a > img:hover{
     .img-logo, .box-img-header{
         display: none;
 }
-
-
-
-    f
 
 .formulario-contato {
     max-width: 500px;
@@ -1083,7 +1087,7 @@ html, body {
         right: 0;
         background: var(--dark6);
         flex-direction: column;
-        width: 70%;
+        width: 40%;
         padding: 20px;
         gap: 1.5rem;
         border-left: 2px solid var(--dark4);
@@ -1091,9 +1095,7 @@ html, body {
         display: none;
     }
 
-    nav.show {
-        display: flex !important;
-    }
+
 
     
 @keyframes slideIn {
