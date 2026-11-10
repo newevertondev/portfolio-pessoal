@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap");
+
+:root {
+    --ink: #151312;
+    --paper: #e8d7bc;
+    --white: #f5f0e7;
+    --red: #c62d27;
+    --muted: #a69c91;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--white);
+    font-family: "DM Sans",sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+}
+
+.skip {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    z-index: 99;
+    background: white;
+    color: black;
+    padding: 12px;
+}
+
+.skip:focus {
+    top: 10px;
+}
+
+.grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 20;
+    opacity: .12;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E");
+}
+
+.site-header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 clamp(20px,5vw,90px);
+    border-bottom: 1px solid #ffffff30;
+    position: relative;
+    z-index: 30;
+}
+
+.brand {
+    font-weight: 900;
+    font-size: 31px;
+    letter-spacing: -2px;
+    text-decoration: none;
+    line-height: .75;
+    transform: rotate(-4deg);
+    min-width: 145px;
+}
+
+.brand span {
+    font-size: 11px;
+    color: var(--red);
+    vertical-align: top;
+}
+
+.brand small {
+    display: block;
+    font: 11px "DM Mono",monospace;
+    letter-spacing: 2px;
+    margin-top: 11px;
+}
+
+.back-link,.header-social {
+    font: 12px "DM Mono",monospace;
+    text-decoration: none;
+}
+
+.back-link:hover,.header-social:hover {
+    color: var(--red);
+}
+
+.section-wrap {
+    padding: 100px clamp(20px,7vw,120px);
+    max-width: 1700px;
+    margin: auto;
+}
+
+.section-marker {
+    font: 12px "DM Mono",monospace;
+    letter-spacing: 2px;
+    color: #e45148;
+    border-top: 1px solid #ffffff50;
+    padding-top: 20px;
+}
+
+h1,h2,h3,p {
+    overflow-wrap: break-word;
+}
+
+h1,h2 {
+    font-weight: 900;
+    letter-spacing: -.075em;
+    line-height: .93;
+}
+
+h1 em,h2 em {
+    font-style: normal;
+    color: var(--red);
+}
+
+.agency-hero {
+    min-height: 680px;
+}
+
+.agency-hero-grid {
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    gap: 50px;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.eyebrow {
+    font: 12px "DM Mono",monospace;
+    letter-spacing: 1px;
+    color: var(--paper);
+}
+
+h1 {
+    font-size: clamp(53px,6.6vw,110px);
+    margin: 25px 0;
+}
+
+.agency-hero p {
+    font-size: clamp(17px,1.7vw,22px);
+    line-height: 1.6;
+    max-width: 540px;
+}
+
+.paper-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 16px 22px;
+    background: var(--red);
+    color: var(--ink);
+    font: 700 13px "DM Mono",monospace;
+    text-decoration: none;
+    transform: rotate(-2deg);
+    transition: transform .25s;
+}
+
+.paper-button:hover {
+    transform: rotate(0) translateY(-3px);
+}
+
+.logo-composition {
+    position: relative;
+    height: 470px;
+    isolation: isolate;
+}
+
+.back-paper,.red-paper {
+    position: absolute;
+    inset: 10%;
+    background: var(--paper);
+    transform: rotate(10deg);
+    clip-path: polygon(1% 3%,98% 0,100% 98%,0 95%);
+}
+
+.red-paper {
+    background: var(--red);
+    transform: rotate(-9deg);
+}
+
+.logo-paper {
+    position: absolute;
+    inset: 15%;
+    background: #f3e8d6;
+    display: grid;
+    place-items: center;
+    padding: 12%;
+    transform: rotate(3deg);
+    box-shadow: 0 20px 40px #0007;
+}
+
+.logo-paper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.sticker {
+    position: absolute;
+    right: 0;
+    bottom: 2%;
+    background: var(--ink);
+    border: 2px solid var(--paper);
+    padding: 12px;
+    transform: rotate(8deg);
+    font: 12px "DM Mono",monospace;
+}
+
+.story {
+    background: #211d1b;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.story h2,.services h2,.gallery h2,.contact h2 {
+    font-size: clamp(48px,6vw,96px);
+}
+
+.note {
+    background: var(--paper);
+    color: var(--ink);
+    padding: clamp(30px,4vw,55px);
+    transform: rotate(2deg);
+    position: relative;
+    box-shadow: 12px 12px 0 #0006;
+    clip-path: polygon(0 2%,99% 0,100% 97%,2% 100%);
+}
+
+.note p {
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+.pin {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: var(--red);
+    font-size: 30px;
+}
+
+.note-footer {
+    font: 12px "DM Mono",monospace;
+    color: #7a3029;
+}
+
+.services {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.services .section-marker {
+    border-color: #15131255;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.service-grid article {
+    border-top: 4px solid var(--ink);
+    padding-top: 18px;
+}
+
+.service-grid span {
+    color: var(--red);
+    font: 13px "DM Mono",monospace;
+}
+
+.service-grid h3 {
+    font-size: clamp(23px,2.4vw,34px);
+    letter-spacing: -.05em;
+}
+
+.service-grid p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.gallery-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gallery-title>span,.gallery-note {
+    font: 12px "DM Mono",monospace;
+    color: var(--muted);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 25px;
+}
+
+.art-card {
+    min-width: 0;
+    margin: 0;
+    background: #272220;
+    padding: 12px 12px 16px;
+    border: 1px solid #ffffff33;
+    transform: rotate(1deg);
+    transition: transform .2s;
+}
+
+.art-card:nth-child(3n/**/+2) {
+    transform: rotate(-2deg);
+}
+
+.art-card:nth-child(4n) {
+    transform: rotate(2deg);
+}
+
+.art-card:hover {
+    transform: rotate(0) translateY(-6px);
+}
+
+.art-card img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    object-fit: contain;
+    background: #171412;
+    display: block;
+}
+
+.art-card figcaption {
+    padding: 12px 3px 4px;
+    font: 11px "DM Mono",monospace;
+    color: var(--paper);
+}
+
+.gallery-note {
+    margin-top: 30px;
+}
+
+.contact-note {
+    background: var(--paper);
+    color: var(--ink);
+    max-width: 920px;
+    margin: 55px auto 0;
+    padding: clamp(30px,6vw,85px);
+    transform: rotate(-2deg);
+    box-shadow: 15px 15px 0 var(--red);
+    clip-path: polygon(0 2%,99% 0,100% 97%,2% 100%);
+}
+
+.contact-note>span {
+    font: 12px "DM Mono",monospace;
+}
+
+.contact-note p {
+    font-size: 20px;
+}
+
+.contact-note .paper-button {
+    color: var(--white);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px 7vw;
+    border-top: 1px solid #ffffff44;
+    font: 11px "DM Mono",monospace;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media (max-width:1050px) {
+    .header-social {
+        display: none;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+}
+
+@media (max-width:760px) {
+    .site-header {
+        height: 75px;
+    }
+
+    .section-wrap {
+        padding: 70px 22px;
+    }
+
+    .agency-hero-grid,.two-col,.service-grid,.gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-composition {
+        height: 350px;
+    }
+
+    .gallery-title {
+        display: block;
+    }
+
+    .art-card img {
+        height: auto;
+        max-height: 480px;
+        object-fit: contain;
+    }
+
+    .note p {
+        font-size: 17px;
+    }
+
+    .contact-note {
+        margin-top: 35px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:380px) {
+    .logo-composition {
+        height: 280px;
+    }
+
+    .brand {
+        font-size: 25px;
+        min-width: 120px;
+    }
+
+    .back-link {
+        font-size: 10px;
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+    *,*:before,*:after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+/* V8 — centralização óptica do K dentro da composição */
+.logo-paper img {
+    transform: translate(-4px, -14px);
+}
+@media (max-width: 760px) {
+    .logo-paper img { transform: translate(-2px, -8px); }
+}
